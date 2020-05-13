@@ -1,0 +1,96 @@
+/*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    /*background-image: url('https://hackernoon.com/hn-images/1*fm87fAluZi8ZtS231kgw1g.png');
+    background-color: whitesmoke;
+    background-size: 1000px 936px;*/
+    font-family: OCR A;
+    height: 100vh;
+    font-size: 12px;
+  }
+
+/*Se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+  body{
+    font-size: 16px;
+  }
+}
+/* breakpoint */
+@media (min-width: 560px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  body{
+    font-size: 24px;
+  }
+}
+
+header{
+  background-image: url('https://hackernoon.com/hn-images/1*fm87fAluZi8ZtS231kgw1g.png');
+  /*background-color: whitesmoke;*/
+  background-size: 1400px 936px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.menu {
+    background-color: lime;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.menu li {
+    list-style: none;
+  }
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: whitesmoke;
+}
+  
+a {
+    font-family: Arial;
+    text-decoration: none;
+    color: MediumSlateBlue;
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  
+.site-subtitle,
+.site-title {
+    color: lime;
+    text-align: center;
+    text-shadow: 5px 5px 5px limegreen;
+  }
+  
+.site-title {
+    font-size: 4em;
+}
+
+.site-subtitle {
+    font-style: italic;
+  }
+
+.img-portfolio {
+    height: 180px;
+    width: 200px;
+  }
